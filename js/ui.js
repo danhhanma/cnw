@@ -219,7 +219,7 @@ function closeLoginModal() {
 
 function handleViewProfile(e) {
   e.preventDefault();
-  alert("Chức năng xem tài khoản đang được phát triển!");
+  window.location.href = "profile.html";
 }
 
 // Initialize UI when DOM is loaded

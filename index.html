@@ -59,43 +59,13 @@
           </div>
           <div id="loggedInMobile" style="display: none">
             <div class="d-flex align-items-center">
-              <div class="dropdown">
-                <button
-                  class="btn btn-danger dropdown-toggle"
-                  type="button"
-                  id="userDropdownMobile"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  <i class="bi bi-person-circle me-2"></i>
-                  <span id="userFullNameMobile">Tài khoản</span>
-                </button>
-                <ul
-                  class="dropdown-menu dropdown-menu-end"
-                  aria-labelledby="userDropdownMobile"
-                >
-                  <li>
-                    <a class="dropdown-item" href="profile.html"
-                      ><i class="bi bi-person me-2"></i>Thông tin tài khoản</a
-                    >
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="points.html"
-                      ><i class="bi bi-coin me-2"></i>Điểm của tôi</a
-                    >
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="history.html"
-                      ><i class="bi bi-clock-history me-2"></i>Lịch sử quy
-                      đổi</a
-                    >
-                  </li>
-                  <li><hr class="dropdown-divider" /></li>
-                </ul>
-              </div>
+              <a href="profile.html" class="btn btn-danger me-2">
+                <i class="bi bi-person-circle me-2"></i>
+                <span id="userFullNameMobile">Tài khoản</span>
+              </a>
               <button
                 type="button"
-                class="btn btn-outline-danger ms-2"
+                class="btn btn-outline-danger"
                 id="logoutBtnMobile"
               >
                 <i class="bi bi-box-arrow-right"></i>
@@ -149,43 +119,13 @@
           </div>
           <div id="loggedIn" style="display: none">
             <div class="d-flex align-items-center">
-              <div class="dropdown">
-                <button
-                  class="btn btn-danger dropdown-toggle"
-                  type="button"
-                  id="userDropdown"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  <i class="bi bi-person-circle me-2"></i>
-                  <span id="userFullName">Tài khoản</span>
-                </button>
-                <ul
-                  class="dropdown-menu dropdown-menu-end"
-                  aria-labelledby="userDropdown"
-                >
-                  <li>
-                    <a class="dropdown-item" href="profile.html"
-                      ><i class="bi bi-person me-2"></i>Thông tin tài khoản</a
-                    >
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="points.html"
-                      ><i class="bi bi-coin me-2"></i>Điểm của tôi</a
-                    >
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="history.html"
-                      ><i class="bi bi-clock-history me-2"></i>Lịch sử quy
-                      đổi</a
-                    >
-                  </li>
-                  <li><hr class="dropdown-divider" /></li>
-                </ul>
-              </div>
+              <a href="profile.html" class="btn btn-danger me-2">
+                <i class="bi bi-person-circle me-2"></i>
+                <span id="userFullName">Tài khoản</span>
+              </a>
               <button
                 type="button"
-                class="btn btn-outline-danger ms-2"
+                class="btn btn-outline-danger"
                 id="logoutBtnDesktop"
               >
                 <i class="bi bi-box-arrow-right"></i> Đăng xuất
@@ -358,7 +298,12 @@
                   </div>
                   <!-- Nút Quy đổi căn giữa -->
                   <div class="w-100 text-center mt-3">
-                    <a href="contact.html" class="btn btn-primary">Quy đổi</a>
+                    <a
+                      href="#"
+                      class="btn btn-primary redeem-btn"
+                      data-price="600"
+                      >Quy đổi</a
+                    >
                   </div>
                 </div>
               </div>
@@ -386,7 +331,12 @@
 
                   <!-- Nút Quy đổi căn giữa -->
                   <div class="w-100 text-center mt-3">
-                    <a href="contact.html" class="btn btn-primary">Quy đổi</a>
+                    <a
+                      href="#"
+                      class="btn btn-primary redeem-btn"
+                      data-price="400"
+                      >Quy đổi</a
+                    >
                   </div>
                 </div>
               </div>
@@ -414,7 +364,12 @@
 
                   <!-- Nút Quy đổi căn giữa -->
                   <div class="w-100 text-center mt-3">
-                    <a href="contact.html" class="btn btn-primary">Quy đổi</a>
+                    <a
+                      href="#"
+                      class="btn btn-primary redeem-btn"
+                      data-price="200"
+                      >Quy đổi</a
+                    >
                   </div>
                 </div>
               </div>
@@ -442,7 +397,12 @@
 
                   <!-- Nút Quy đổi căn giữa -->
                   <div class="w-100 text-center mt-3">
-                    <a href="contact.html" class="btn btn-primary">Quy đổi</a>
+                    <a
+                      href="#"
+                      class="btn btn-primary redeem-btn"
+                      data-price="500"
+                      >Quy đổi</a
+                    >
                   </div>
                 </div>
               </div>
@@ -470,7 +430,12 @@
 
                   <!-- Nút Quy đổi căn giữa -->
                   <div class="w-100 text-center mt-3">
-                    <a href="contact.html" class="btn btn-primary">Quy đổi</a>
+                    <a
+                      href="#"
+                      class="btn btn-primary redeem-btn"
+                      data-price="800"
+                      >Quy đổi</a
+                    >
                   </div>
                 </div>
               </div>
@@ -498,7 +463,12 @@
 
                   <!-- Nút Quy đổi căn giữa -->
                   <div class="w-100 text-center mt-3">
-                    <a href="contact.html" class="btn btn-primary">Quy đổi</a>
+                    <a
+                      href="#"
+                      class="btn btn-primary redeem-btn"
+                      data-price="350"
+                      >Quy đổi</a
+                    >
                   </div>
                 </div>
               </div>
@@ -782,6 +752,7 @@
     <script src="index_files/custom.js"></script>
     <script src="js/ui.js"></script>
     <script src="js/auth.js"></script>
+    <script src="js/redemption.js"></script>
 
     <style type="text/css"></style>
   </body>

@@ -170,6 +170,16 @@ async function handleLogout(e) {
   }
 }
 
+// Handle profile navigation
+function handleProfileNavigation() {
+  const token = localStorage.getItem("token");
+  if (!token) {
+    window.location.href = "index.html";
+    return;
+  }
+  window.location.href = "profile.html";
+}
+
 // Add event listeners when DOM is loaded
 document.addEventListener("DOMContentLoaded", function () {
   console.log("DOM loaded, setting up auth event listeners");
@@ -177,6 +187,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const registerForm = document.getElementById("registerFormElement");
   const logoutBtnDesktop = document.getElementById("logoutBtnDesktop");
   const logoutBtnMobile = document.getElementById("logoutBtnMobile");
+  const profileLinks = document.querySelectorAll('a[href="profile.html"]');
 
   if (loginForm) {
     console.log("Adding login form listener");
@@ -195,8 +206,13 @@ document.addEventListener("DOMContentLoaded", function () {
     logoutBtnMobile.addEventListener("click", handleLogout);
   }
 
-  // Check initial login status - Removed as it's now handled by ui.js
-  // checkLoginStatus();
+  // Add profile navigation listeners
+  profileLinks.forEach((link) => {
+    link.addEventListener("click", function (e) {
+      e.preventDefault();
+      handleProfileNavigation();
+    });
+  });
 });
 
 // Export functions for use in other files
@@ -205,4 +221,5 @@ window.auth = {
   handleRegister,
   handleLogout,
   checkLoginStatus,
+  handleProfileNavigation,
 };

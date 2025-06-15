@@ -15,13 +15,18 @@ document.addEventListener("DOMContentLoaded", function () {
     .then((response) => response.json())
     .then((data) => {
       if (data) {
-        // Update profile information
+        // Update profile information in the sidebar
         document.getElementById("profileFullName").textContent = data.full_name;
-        document.getElementById("profileUsername").textContent =
-          "@" + data.username;
-        document.getElementById("profileEmail").textContent = data.email;
+        document.getElementById("profileUsername").textContent = data.username;
         document.getElementById("profilePoints").textContent =
-          data.points + " điểm";
+          data.score + " điểm";
+
+        // Update profile information in the details section
+        document.getElementById("profileFullNameInfo").textContent =
+          data.full_name;
+        document.getElementById("profileUsernameInfo").textContent =
+          data.username;
+        document.getElementById("profileEmail").textContent = data.email;
       }
     })
     .catch((error) => {
